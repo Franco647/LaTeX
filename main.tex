@@ -1,0 +1,121 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\title{Trabajo Practico Packet Tracer}
+\author{Franco Thobokholt}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Packet Tracer}
+Packet Tracer es un potente software de simulación de redes desarrollado por Cisco, ampliamente utilizado en educación para enseñar conceptos básicos y avanzados de redes. Las herramientas y modos de funcionamiento más importantes del software se detallan a continuación.
+\subsection{Interfaz de usuario}
+La interfaz de usuario de Packet Tracer está diseñada para ser intuitiva y accesible, incluso para principiantes en redes. En la parte superior de la ventana principal se encuentra la barra de herramientas, que permite un acceso rápido a funciones esenciales como abrir, guardar y configurar simulaciones. A la izquierda hay una paleta de dispositivos que incluye una amplia gama de dispositivos de red y dispositivos finales. En la parte central se encuentra el área de trabajo, donde se construyen y gestionan redes simuladas.
+\subsection{Modos de operacion: simulación y tiempo real}
+Packet Tracer ofrece dos modos principales de operación: simulación y tiempo real.
+\textbf{Modo tiempo real:} Este modo le permite construir y observar redes en funcionamiento continuo, como si fueran una red real. Los dispositivos emulados funcionan de forma simultánea y continua, y los usuarios pueden monitorear el tráfico de la red en tiempo real.
+\textbf{Modo de simulación:} En este modo, los usuarios pueden detener el tiempo y observar los paquetes que se transmiten paso a paso a través de la red. Este modo es ideal para análisis detallados de comunicación y resolución de problemas de dispositivos, ya que le permite ver cada paso del proceso de envío y recepción de datos.
+\subsection{Herramientas de configuración y monitoreo}
+Packet Tracer incluye varias herramientas para la configuración y monitoreo de la red:
+\textbf{CLI (Command Line Interface):} La mayoría de los dispositivos de rastreo de paquetes se pueden configurar con una interfaz de línea de comando (CLI), que permite a los usuarios realizar configuraciones de dispositivos Cisco en el mundo real.
+\textbf{GUI:} Además de la CLI, algunos dispositivos se pueden configurar a través de una GUI que simplifica la configuración básica, como la asignación de direcciones IP o la configuración de VLAN.
+\textbf{actividad personalizable} Esta herramienta le permite examinar los detalles de cada paquete que pasa por la red. Esto es especialmente útil en el modo de simulación, donde puede rastrear el flujo de paquetes a diferentes dispositivos y ver cómo los cambios en la configuración de la red afectan el tráfico.
+\textbf{Herramientas de colaboracion} Packet Tracer proporciona herramientas como captura de paquetes, ping, rastreo y otras herramientas de diagnóstico que le permiten evaluar el estado de la red y detectar posibles problemas de red.
+\textbf{Actividad personalizable:} Los instructores pueden crear actividades personalizadas para los estudiantes, incluidas guías paso a paso y evaluaciones automáticas de desempeño, lo que permite una experiencia de aprendizaje interactiva y guiada.
+\subsection{Herramientas de colaboración}
+Una característica notable de Packet Tracer es su capacidad para admitir la colaboración en tiempo real entre múltiples usuarios. Con Packet Tracer Multiuser, varios estudiantes pueden trabajar en la misma simulación desde diferentes ubicaciones, lo que permite la colaboración y el aprendizaje colaborativo.
+\subsection{Soporte para IoT y dispositivos inteligentes}
+Además de los dispositivos de red tradicionales, Packet Tracer también puede simular dispositivos de Internet de las cosas (IoT). Esto incluye sensores, actuadores y dispositivos inteligentes que se pueden programar y conectar a la red simulada, proporcionando un entorno de aprendizaje completo para las redes modernas.
+\subsection{Escenarios prácticos y evaluaciones}
+Packet Tracer viene con una serie de escenarios preconfigurados que permiten a los usuarios practicar la configuración de red desde la básica hasta la más avanzada. Además, los instructores pueden crear escenarios personalizados adaptados a los objetivos específicos de un curso o módulo, facilitando evaluaciones formativas y sumativas.
+Esta sección cubre las principales herramientas y modos de operación de Packet Tracer, proporcionando una base sólida para comprender y utilizar el software en un contexto educativo.
+
+\section{Dispositivos finales}
+Esta sección describe los principales dispositivos finales utilizados en Packet Tracer, que son esenciales para simular una red completa y funcional.
+Las computadoras y portátiles son dispositivos esenciales en cualquier red porque representan a los usuarios finales. En Packet Tracer, estos dispositivos se pueden configurar con diferentes direcciones IP, máscaras de red y puertas de enlace. Además, pueden simular navegación por Internet, transferencia de archivos y acceso a servicios de red.
+Los servidores Packet Tracer también proporcionan varios servicios de red, como HTTP, FTP, DNS y DHCP. Estos dispositivos son esenciales para simular escenarios donde se requiere acceso a recursos compartidos, administración de dominios y asignación dinámica de direcciones IP.
+
+\section{Dispositivos de red}
+Esta sección describirá los principales dispositivos de red disponibles en Packet Tracer, como enrutadores, conmutadores y puntos de acceso. Se analizarán sus características, incluido el firmware disponible, módulos y tarjetas de expansión, así como su papel en la simulación de redes.
+\subsection{Enrutadores}
+Los routers son dispositivos imprescindibles en cualquier red porque permiten interconectar diferentes redes y dirigir el tráfico de datos entre ellas. En Packet Tracer, los enrutadores vienen en muchos tipos, cada uno con diferentes capacidades y características.
+\textbf{Enrutadores:} 
+Los enrutadores de seguimiento de paquetes utilizan versiones emuladas del sistema operativo de Internet (IOS) de Cisco. Esto permite a los usuarios realizar configuraciones avanzadas como enrutamiento dinámico (OSPF, EIGRP, RIP), acceso remoto a través de SSH y configuraciones de seguridad como listas de control de acceso (ACL).
+\textbf{Módulos de expansión:}
+Los enrutadores se pueden personalizar agregando módulos adicionales, como interfaces Ethernet adicionales, módulos de fibra óptica o interfaces seriales. Estos módulos permiten ampliar las capacidades del router y simular escenarios más complejos, como la conexión de más sucursales o la configuración de conexiones WAN.
+\textbf{Tarjetas disponibles:} 
+Packet Tracer proporciona una variedad de tarjetas para enrutadores, incluidas tarjetas WAN (como la WIC-2T para conexiones en serie), tarjetas FastEthernet y tarjetas GigabitEthernet. La elección de tarjetas y módulos permite adaptar el enrutador a las necesidades específicas de la simulación. 
+\subsection{Celsin}
+Los conmutadores son dispositivos esenciales para interconectar dispositivos en una misma red (LAN). En Packet Tracer, hay varios modelos de conmutadores disponibles, desde básicos hasta avanzados, lo que permite la simulación de redes de campus y redes empresariales.
+\textbf{Conmutadores:} 
+Los conmutadores también utilizan versiones emuladas del sistema operativo IOS, que permiten la configuración de funciones avanzadas como VLAN, Spanning Tree Protocol (STP) y agregación de enlaces (EtherChannel).
+\textbf{Módulos de expansión:} 
+Algunos modelos de switch permiten agregar módulos para aumentar la cantidad de puertos o agregar interfaces de fibra óptica. Esto es útil para simular redes de alta densidad o conectar conmutadores a largas distancias mediante enlaces de fibra óptica. 
+\textbf{Tarjetas disponibles:}
+Los conmutadores pueden equiparse con tarjetas Ethernet de varias velocidades, incluidas FastEthernet, GigabitEthernet y 10 GigabitEthernet, según el modelo. Le permite configurar redes que admitan diferentes niveles de ancho de banda y simular entornos de red modernos y heredados.
+\subsection{Puntos de acceso inalámbrico (AP):}
+Los puntos de acceso son dispositivos que permiten la conexión inalámbrica a la red. En Packet Tracer, los puntos de acceso están diseñados para imitar redes Wi-Fi, lo que facilita la simulación de redes inalámbricas en entornos domésticos, comerciales o públicos.
+\textbf{Firmware:} 
+Los puntos de acceso de Packet Tracer utilizan firmware que le permite configurar varios aspectos de la red inalámbrica, como SSID, canales de frecuencia, cifrado y políticas de acceso. 
+\textbf{Módulos de expansión:}
+A diferencia de los enrutadores y conmutadores, los puntos de acceso de Packet Tracer generalmente tienen menos opciones de expansión. Sin embargo, algunos modelos pueden permitir la adición de antenas para mejorar la cobertura o módulos para admitir nuevos estándares inalámbricos como 802.11ac.
+\textbf{Tarjetas disponibles:} 
+Los puntos de acceso generalmente no requieren tarjetas adicionales, pero los dispositivos cliente (como computadoras portátiles y teléfonos inteligentes) deben estar equipados con tarjetas inalámbricas compatibles para conectarse a la red simulada.
+\subsection{Cortafuegos}
+Aunque son menos comunes en simulaciones básicas, los firewalls son esenciales para la seguridad de la red. Packet Tracer incluye dispositivos de firewall como Cisco ASA, que le permiten configurar políticas de seguridad avanzadas para proteger su red de ataques y controlar el tráfico entrante y saliente. 
+\textbf{ASA:} 
+Cisco ASA en Packet Tracer utiliza una versión emulada del sistema operativo ASA, que permite la configuración de políticas de seguridad, VPN y aplicación de reglas de acceso.
+\textbf{Tarjetas disponibles:}
+Los cortafuegos pueden equiparse con interfaces Ethernet de alta velocidad y algunos modelos admiten conexiones de fibra óptica para la integración en redes empresariales de alto rendimiento.
+\subsection{Simulación de red con dispositivos de red:}
+La combinación de estas herramientas de red en Packet Tracer le permite crear simulaciones detalladas y precisas de redes reales. Los usuarios pueden configurar y monitorear las interacciones entre enrutadores, conmutadores, puntos de acceso y firewalls y ver cómo las configuraciones afectan el tráfico y la seguridad de la red. Además, la capacidad de modificar firmware, agregar módulos y tarjetas proporciona una gran flexibilidad para simular diferentes escenarios de red.
+
+\section{Cableado}
+El cable es un elemento esencial en la configuración de la red porque proporciona una conexión física entre la red y los dispositivos finales. En Packet Tracer existen varios tipos de cables para simular las conexiones utilizadas en redes reales. A continuación se describen los principales tipos de cables disponibles y su aplicación práctica en la plataforma.
+\subsection{cable de par trenzado recto:}
+El cable de par trenzado recto, también conocido como \textit{directo}, es el tipo de cable más común para conectar diferentes dispositivos entre sí, como en Packet Tracer, este tipo de cable se utiliza cuando se requiere una conexión de red Ethernet estándar. 
+\textbf{Implementación práctica:}
+- Conexión entre ordenador y switch. - Conexión entre router y switch. - En general, para conectar dispositivos de distintos tipos en una misma red.
+\subsection{cable cruzado:}
+El cable cruzado se utiliza principalmente para conectar dispositivos similares entre sí, como de PC a PC, de conmutador a conmutador o de enrutador a enrutador, sin necesidad de un intermediario como un conmutador. Packet Tracer simula eficazmente esta conexión, lo que permite a los usuarios crear pequeñas redes y probar la comunicación directa entre dos dispositivos del mismo tipo. \textbf{Implementación práctica:}
+- Conexión directa entre dos ordenadores sin switch. - Conexión entre dos conmutadores o entre dos enrutadores para fines de prueba y configuraciones específicas. - Se utiliza en configuraciones que requieren emulación de conexión directa entre dispositivos de red similares.
+\subsection{cable de consola:}
+El cable de consola se utiliza para conectar un dispositivo de red a una computadora para configuración inicial o mantenimiento. Este tipo de cable es esencial cuando necesitas usar la CLI de un enrutador o cambiar directamente desde una PC. En Packet Tracer, este cable está representado por un enlace azul y es esencial para configurar dispositivos que no están conectados a una red activa.
+\textbf{Implementación práctica:}
+- Acceso a la configuración inicial de enrutadores y conmutadores a través de la consola CLI. - Conexión entre la consola de gestión de un dispositivo de red y un terminal o PC. - Funciones de diagnóstico y mantenimiento directo del equipo.
+\subsection{cable de fibra óptica:}
+El cable de fibra óptica se utiliza en redes que requieren un alto rendimiento y un amplio alcance, como conexiones básicas entre conmutadores en diferentes edificios o para conexiones a Internet de alta capacidad. Aunque no es común en redes pequeñas o en capacitación, Packet Tracer permite su uso para simular redes avanzadas que requieren mayor ancho de banda y distancias extendidas.
+\textbf{Implementación práctica:}
+- Conexión entre conmutadores de red a largas distancias, como por ejemplo entre diferentes edificios o plantas de un mismo edificio. - Conexiones de alta velocidad para campus clave o conexiones de red corporativa. - Simulación de conexiones WAN de alta capacidad en redes más complejas.
+\subsection{cable serie:}
+El cable serie se utiliza para conexiones WAN en redes más tradicionales, especialmente en la interconexión de enrutadores mediante enlaces serie. Aunque este tipo de conexión es menos común en las redes modernas, sigue siendo importante en entornos específicos o para aprender conceptos de redes tradicionales.
+\textbf{Implementación práctica:}
+- Conexión entre routers para simular conexiones WAN. - Utilizado en la configuración de redes que requieren la emulación de conexiones punto a punto. - Ejemplos de configuraciones seriales y pruebas de conexión en entornos más complejos.
+\subsection{Implementación práctica en Packet Tracer:}
+Packet Tracer permite a los usuarios seleccionar y aplicar estos diferentes tipos de cables a sus simulaciones. Cada cable tiene su función específica y la elección correcta del tipo de cable es crucial para el éxito de la simulación. Además, el software imita el comportamiento de los cables en el mundo real, lo que le permite observar cómo las conexiones físicas afectan el tráfico de la red y la configuración del dispositivo. La visualización en tiempo real y la simulación paso a paso facilitan el aprendizaje y la comprensión de las diferencias entre los tipos de cables y su aplicación en diferentes escenarios.
+
+\section{Referencias}
+A continuación, se enumeran las fuentes consultadas para la elaboración de este documento. Estas referencias incluyen manuales, tutoriales en línea, y documentación oficial que han sido utilizados para entender y explicar las funcionalidades de Packet Tracer, así como los dispositivos y cableado involucrados en la simulación de redes.
+
+\begin{itemize}
+    \item Cisco Networking Academy. (2023). 
+    \textit{Packet Tracer - Networking Simulation Tool}. [Enlace](https://www.netacad.com/courses/packet-tracer)
+    \item Cisco. (2023). 
+    \textit{Cisco IOS Configuration Fundamentals Command Reference}. [Enlace](https://www.cisco.com/c/en/us/td/docs/ios/fundamentals/command/reference/cf_book.html)
+    \item TutorialsPoint. (2023). 
+    \textit{Cisco Packet Tracer Tutorial}. [Enlace](https://www.tutorialspoint.com/cisco_packet_tracer/index.htm)
+    \item TechTarget. (2023). 
+    \textit{What is Cisco Packet Tracer and How to Use it?}. [Enlace](https://www.techtarget.com/searchnetworking/definition/Cisco-Packet-Tracer)
+    \item Redacción propia basada en las clases de la materia (2024). 
+\end{itemize}
+\textbf{Repositorio GitHub:} El código fuente de este documento en LaTeX, junto con los archivos adicionales, se encuentra disponible en el siguiente repositorio de GitHub:
+\begin{itemize}
+    \item [Enlace al repositorio GitHub: \url{https://github.com/franco647/LaTeX}]
+\end{itemize}
+
+\end{document}
